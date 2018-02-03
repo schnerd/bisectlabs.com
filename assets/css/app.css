@@ -1,6 +1,6 @@
 html {
- height: 100%;
- box-sizing: border-box;
+  height: 100%;
+  box-sizing: border-box;
 }
 *,
 *:before,
@@ -12,10 +12,51 @@ body {
   position: relative;
   margin: 0;
   min-height: 100%;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
+/* Projects */
+.projects {
+  margin-top: 3em;
+}
+.projects-list {
+  display: flex;
+  align-items: middle;
+}
+.projects-title {
+  margin-bottom: 20px;
+}
+.project {
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  transition: border 0.3s, transform 0.3s;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.project:hover {
+  border: 1px solid #f2849e;
+  transform: scale(1.05);
+}
+.project img {
+  width: 100%;
+  height: auto;
+}
 
+@media screen and (max-width: 540px) {
+  .projects-list {
+    display: block;
+  }
+  .project {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+}
+
+/* Footer */
 #footer {
   padding: 0;
   position: absolute;
@@ -30,10 +71,10 @@ body {
 }
 
 #footer > .inner {
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    align-items: center;
-    height: 100%;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
 }
 @media screen and (max-width: 736px) {
   #footer > .inner {
